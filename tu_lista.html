@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Lista</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/javascript.js" defer></script>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="titulo">
+            <h1>Sweet Melody</h1>
+        </div>
+
+        <div class="contenedor_botones">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li><a href="clasificación.html"><u>Clasificación</u></a></li>
+                <li><a href="tu_lista.html">Lista</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main style="margin-top: 120px;">
+        <section class="fondo_seccion" style="margin-top: 10px;">
+            <h2 style="font-size: 50px;">¡Crea tu Propia Lista!</h2>
+            <br>
+            <div class="fondo_textos_seccion">
+                <p align="center">Agrega las canciones que te generan emociones fuertes y el sentimiento que te
+                    producen. Tu registro personal de frecuencias emocionales.</p>
+            </div>
+        </section>
+
+
+        <!--Sección de Tabla-->
+
+        <section class="seccion_tabla">
+            <div class="contenedor_form">
+
+                <div class="parte_formulario">
+                    <label>Canción</label><br><br>
+                    <input type="text" id="nombre-cancion" placeholder="Nombre de la canción" />
+                </div>
+
+                <div class="parte_formulario">
+                    <label>Artista</label><br><br>
+                    <input type="text" id="nombre-artista" placeholder="Artista o banda" />
+                </div>
+
+                <div class="parte_formulario">
+                    <label>Sentimiento</label><br><br>
+                    <select id="eleccion-sentimiento">
+                        <option value="">Seleccionar...</option>
+                        <option>Alegría</option>
+                        <option>Tristeza</option>
+                        <option>Nostalgia</option>
+                        <option>Calma</option>
+                        <option>Euforia</option>
+                        <option>Ansiedad</option>
+                        <option>Esperanza</option>
+                        <option>Amor</option>
+                        <option>Melancolía</option>
+                        <option>Motivación</option>
+                    </select>
+                </div>
+                <div style="height: 100%; align-content: end; padding-bottom: 2px;">
+                    <button class="boton_añadir" onclick="agregarCancion()">Agregar</button>
+                </div>
+            </div>
+
+            <table id="tabla-canciones">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Canción</th>
+                        <th>Artista</th>
+                        <th>Sentimiento</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-body">
+
+                    <tr>
+                        <td colspan="5">
+                            <div class="vacio">
+                                <div class="simbolo_vacio">?</div>
+                                <div><em>"La música es un mantra, debes dejarla fluir. No se trata de cuántas canciones
+                                        puedas sacar, sino de cuánto corazón y alma pongas en cada una de
+                                        ellas."<em></em><br><br>
+                                        -Michael Jackson</div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+
+    <footer><em>@Sweet Melody Copyright <br> Todos los derechos reservados </em></footer>
+</body>
+
+</html>
